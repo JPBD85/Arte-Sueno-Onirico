@@ -1,0 +1,115 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5dc; /* greige */
+    color: #001f3f; /* azul marino */
+}
+header {
+    background-color: #001f3f;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+nav a:hover {
+    text-decoration: underline;
+}
+section {
+    padding: 20px;
+    text-align: center;
+}
+ul {
+    list-style: none;
+    padding: 0;
+}
+ul li {
+    margin: 5px 0;
+}
+form input, form textarea, form select, form button {
+    width: 80%;
+    max-width: 400px;
+    margin-bottom: 10px;
+    padding: 8px;
+}
+form button {
+    background-color: #001f3f;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+form button:hover {
+    background-color: #333;
+}
+footer {
+    background-color: #001f3f;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+.galeria img {
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+.galeria img:hover {
+    transform: scale(1.05);
+    border-color: #001f3f;
+}
+/* Modal */
+#modalDetalle {
+    display: none;
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0,0,0,0.7);
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+.modal-content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 400px;
+    max-width: 90%;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+}
+.modal-content img {
+    margin: 10px 0;
+    border-radius: 5px;
+}
+.cerrar {
+    float: right;
+    font-size: 24px;
+    cursor: pointer;
+    color: #001f3f;
+}
+.cerrar:hover {
+    color: red;
+}
+.modal-content button {
+    background: #001f3f;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.modal-content button:hover {
+    background: #333;
+}
